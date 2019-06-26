@@ -1,10 +1,12 @@
 # mkpypkg
 
-Initializes an empty Python package to my own tastes.
+Initializes an empty Python package or reorganizes existing directory into Python package.
 
-The LICENSE assumes MIT. 
+Assumptions:
 
-The .gitignore assumes all Python.
+	MIT LICENSE
+
+	All Python for .gitignore
 
 ## Installation
 
