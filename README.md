@@ -9,33 +9,31 @@ The .gitignore assumes all Python.
 
 	1. Run setup.py:
 
-	```
-	python setup.py develop
-	```
+		python setup.py develop
 
 	2. Modify the mkpypkg_config with your information.
 
-
 ## To make an empty package
 
-	1. Create an empty directory (naming it as you want the package to be named) and cd into it.
+	1. Decide where you want your new package to be created and what to name it.
 
-	2. From your new directory, run mkpkg.py:
+	2. Run `/scripts/mk_empty.py`:
 
-	```
-	python mkpkg.py --empty
-	```
+		python mk_empty.py --n 'your-pkg' --l '/path/to/your/pkg'
 
-	3. Now you should see the following structure
+	3. Now in that location you should see the following structure
 
-	your-dir/
-		your-dir/
+	your-pkg/
+		your-pkg/
 			__init__.py
-		setup.py
+		docs/
+		notebooks/
+		scripts/
 		.gitignore
-		README.md
-		LICENSE
 		CITATION.cff
+		LICENSE
+		README.md
+		setup.py
 
 ## To retain a nice Python package structure
 
