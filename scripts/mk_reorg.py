@@ -9,7 +9,7 @@ Authors:
 
 import argparse
 
-from mkpypkg.mkpypkg import emptypkg
+from mkpypkg.mkpypkg import reorgpkg
 
 
 def parse_args():
@@ -17,9 +17,6 @@ def parse_args():
     """
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--n', dest='pkg_name',
-        action='store', required=True,
-        help="Name of the package.")
     parser.add_argument('--l', dest='pkg_loc', default='',
         action='store', required=False,
         help="Location of the package. Defaults to current location.") 
@@ -31,4 +28,4 @@ def parse_args():
 if __name__=='__main__':
 	args = parse_args()
 
-	emptypkg(args.pkg_name, args.pkg_loc)
+	reorgpkg(args.pkg_loc)

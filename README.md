@@ -1,4 +1,5 @@
 # mkpypkg
+
 Initializes an empty Python package to my own tastes.
 
 The LICENSE assumes MIT. 
@@ -13,7 +14,7 @@ The .gitignore assumes all Python.
 
 	2. Modify the mkpypkg_config with your information.
 
-## To make an empty package
+## To make an empty Python package
 
 	1. Decide where you want your new package to be created and what to name it.
 
@@ -34,6 +35,16 @@ The .gitignore assumes all Python.
 		LICENSE
 		README.md
 		setup.py
+
+## To reorganize an existing directory into Python package
+
+	1. Locate the directory of Python files you wish to organize into a package. The package name will assumed to be that of the base directory.
+
+	2. Run `/scripts/mk_reorg.py`:
+
+		python mk_reorg.py --l '/path/to/your/dir'
+
+	3. The organization should match that of the example above. This script is only meant to get you part-way there, so be sure to check that all the files are where you expect!
 
 ## To retain a nice Python package structure
 
