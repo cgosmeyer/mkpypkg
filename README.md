@@ -40,17 +40,23 @@ Assumptions:
 
 ## To reorganize an existing directory into Python package
 
-	1. Locate the directory of Python files you wish to organize into a package. The package name will assumed to be that of the base directory.
+	1. Locate the directory of Python files you wish to organize into a package. 
+	The package name will assumed to be that of the base directory.
 
 	2. Run `/scripts/mk_reorg.py`:
 
 		python mk_reorg.py --l '/path/to/your/dir'
 
-	3. The organization should match that of the example above. This script is only meant to get you part-way there, so be sure to check that all the files are where you expect!
+	3. The organization should match that of the example above. 
+	This script is only meant to get you part-way there, so be sure to check 
+	that all the files are where you expect!
 
 ## To retain a nice Python package structure
 
-	1. Write your modules in the subdirectory `your-dir`. *No scripts (command-line run Python files) should be in this subdirectory!* This subdirectory can have sub-sub-directories (and all levels need to contain an `__init__.py`!).  Use whatever organization works best for your code. 
+	1. Write your modules in the subdirectory `your-dir`. *No scripts (command-
+	line run Python files) should be in this subdirectory!* This subdirectory can
+	have sub-sub-directories (and all levels need to contain an `__init__.py`!).
+	Use whatever organization works best for your code. 
 
 	For instance, the following structure 
 
@@ -60,7 +66,12 @@ Assumptions:
 
 		from your-dir.cool-utilities import stuff
 
-	2. All Python files that are not meant to have importable functions and classes, but instead are the ones importing from your package's other Python files (i.e., scripts) should be stored at the top-level or in a subdirectory named something like `scripts`.  Likewise, example files and docs need to be in directories at the top level. You might end up with a package look like this:
+	2. All Python files that are not meant to have importable functions and 
+	classes, but instead are the ones importing from your package's other Python 
+	files (i.e., scripts) should be stored at the top-level or in a subdirectory 
+	named something like `scripts`.  Likewise, example files and docs need to be
+	in directories at the top level. You might end up with a package look like 
+	this:
 
 	your-dir/
 		your-dir/
@@ -79,6 +90,5 @@ Assumptions:
 		LICENSE
 		CITATION.cff
 
-## To make a package from an existing Python project
 
 
