@@ -14,7 +14,15 @@ Assumptions:
 
 		python setup.py develop
 
-	2. Modify the mkpypkg_config with your information.
+	2. Modify the mkpypkg_config with your information. For example:
+	
+	"""
+	mkpypkg_loc = "/full/path/to/mkpypkg"
+	given_name = "Isaac"
+	family_name = "Newton"
+	orcid = "optional orcid so you can get cited properly"
+	github_user = "inewton"
+	"""
 
 ## To make an empty Python package
 
